@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "motion/react": ["./lib/motion-shim.ts"]
     }
   },
   "include": [
