@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [main, ui]
+    branches: [main, ui, "feat/**"]
   pull_request:
     branches: [main]
 
