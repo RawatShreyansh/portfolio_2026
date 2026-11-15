@@ -4,6 +4,7 @@ import { ArrowUp, ArrowUpRight, Mail } from "lucide-react";
 import type { ReactElement } from "react";
 import { HandwrittenQuote } from "@/components/library/handwritten-quote";
 import { Globe, type Marker, type Arc } from "@/components/ui/cobe-globe";
+import SignaturePenFooter from "@/components/ui/signature-pen-footer";
 import { useResolvedTheme } from "@/lib/hooks/use-resolved-theme";
 
 const GLOBE_MARKERS: Marker[] = [
@@ -42,6 +43,17 @@ export function Footer(): ReactElement {
             msPerChar={34}
             penTip
             className="max-w-2xl text-2xl leading-relaxed sm:text-[34px] sm:leading-relaxed"
+          />
+        </div>
+
+        {/* Signature Pen Animation ("Finished") */}
+        <div className="flex w-full items-center justify-center py-2 sm:py-4">
+          <SignaturePenFooter
+            stageOnly
+            word="Finished"
+            duration={2.6}
+            interactive
+            theme="auto"
           />
         </div>
 
@@ -126,6 +138,12 @@ export function Footer(): ReactElement {
                   className="text-sm text-foreground/75 transition-colors hover:text-foreground"
                 >
                   Ecosystem
+                </a>
+                <a
+                  href="#projects"
+                  className="text-sm text-foreground/75 transition-colors hover:text-foreground"
+                >
+                  Featured Work
                 </a>
                 <a
                   href="#footer"
