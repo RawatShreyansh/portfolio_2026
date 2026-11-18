@@ -256,7 +256,7 @@ export function ProjectsSection(): ReactElement {
 
           {/* Subtext info */}
           <div className="mt-12 text-center">
-            <p className="font-mono text-xs text-foreground/50">
+            <p className="font-mono text-xs text-foreground/65">
               Hover over any project row to inspect architecture and performance metrics.
             </p>
           </div>

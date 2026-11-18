@@ -280,6 +280,8 @@ export function ProjectHoverPreviewCard({
 }: ProjectHoverPreviewCardProps): ReactElement | null {
   if (!project) return null;
 
+  const isPositioned = position.x > 0 || position.y > 0;
+
   return (
     <div
       aria-hidden="true"
@@ -287,8 +289,8 @@ export function ProjectHoverPreviewCard({
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        opacity: visible ? 1 : 0,
-        transform: `translate(-50%, -50%) scale(${visible ? 1 : 0.94})`,
+        opacity: visible && isPositioned ? 1 : 0,
+        transform: `translate(-50%, -50%) scale(${visible && isPositioned ? 1 : 0.94})`,
       }}
     >
       <div className="relative w-[340px] overflow-hidden rounded-xl border border-foreground/15 bg-background/95 p-3.5 shadow-2xl backdrop-blur-xl transition-colors duration-300">
@@ -309,15 +311,15 @@ export function ProjectHoverPreviewCard({
         {/* Card Metadata info */}
         <div className="mt-3 space-y-1 px-1">
           <div className="flex items-center justify-between">
-            <span className="font-mono text-[11px] font-medium uppercase tracking-wider text-foreground/50">
+            <span className="font-mono text-[11px] font-medium uppercase tracking-wider text-foreground/65">
               {project.category}
             </span>
-            <span className="font-mono text-[11px] text-foreground/40">{project.year}</span>
+            <span className="font-mono text-[11px] text-foreground/60">{project.year}</span>
           </div>
           <h4 className="text-base font-semibold tracking-tight text-foreground">
             {project.title}
           </h4>
-          <p className="line-clamp-2 text-xs leading-relaxed text-foreground/65">
+          <p className="line-clamp-2 text-xs leading-relaxed text-foreground/75">
             {project.description}
           </p>
 
