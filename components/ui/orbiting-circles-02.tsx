@@ -33,6 +33,11 @@ const KEYFRAMES = `
   from { transform: rotate(var(--counter-offset, 0deg)) }
   to   { transform: rotate(calc(var(--counter-offset, 0deg) + 360deg)) }
 }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+  }
+}
 `;
 
 const ORBITS: OrbitRing[] = [

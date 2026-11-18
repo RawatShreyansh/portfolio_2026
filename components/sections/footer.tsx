@@ -85,7 +85,7 @@ export function Footer(): ReactElement {
             </div>
 
             {/* Subtle interactive caption */}
-            <div className="mt-4 flex items-center justify-center gap-2.5 font-mono text-[11px] text-foreground/50">
+            <div className="mt-4 flex items-center justify-center gap-2.5 font-mono text-[11px] text-foreground/65">
               <span className="flex items-center gap-1.5">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
@@ -93,24 +93,23 @@ export function Footer(): ReactElement {
                 </span>
                 <span>Available for Global Roles</span>
               </span>
-              <span className="text-foreground/30">•</span>
-              <span className="text-foreground/40">Drag to rotate</span>
+              <span className="text-foreground/45">•</span>
+              <span className="text-foreground/60">Drag to rotate</span>
             </div>
           </div>
 
           {/* Right Column: All Links & Details */}
-          <div className="flex flex-col gap-10 lg:col-span-6 lg:pl-4">
+          <div id="contact" className="flex scroll-mt-28 flex-col gap-10 lg:col-span-6 lg:pl-4">
             {/* Identity & Bio header */}
             <div>
-              <span className="font-mono text-xs uppercase tracking-[0.25em] text-foreground/50">
-                Portfolio 2026
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-foreground/60">
+                Let&apos;s Connect · Portfolio 2026
               </span>
               <h2 className="mt-1 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                Shreyansh Rawat
+                Let&apos;s Build Intelligent Systems
               </h2>
-              <p className="mt-2 max-w-lg text-sm leading-relaxed text-foreground/65">
-                Data Scientist &amp; AI/ML Engineer. Building intelligent systems, deep
-                learning models, neural search architectures, and production-scale machine learning pipelines.
+              <p className="mt-2 max-w-lg text-sm leading-relaxed text-foreground/75">
+                Data Scientist &amp; AI/ML Engineer. Open for global engineering roles, foundational research, and production-scale machine learning architecture.
               </p>
             </div>
 
@@ -118,36 +117,36 @@ export function Footer(): ReactElement {
             <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
               {/* Navigation Links */}
               <div className="flex flex-col gap-2.5">
-                <span className="font-mono text-xs uppercase tracking-wider text-foreground/50">
+                <span className="font-mono text-xs uppercase tracking-wider text-foreground/60">
                   Navigation
                 </span>
                 <a
                   href="#home"
-                  className="text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Home
                 </a>
                 <a
                   href="#stack"
-                  className="text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   My Stack
                 </a>
                 <a
                   href="#ecosystem"
-                  className="text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Ecosystem
                 </a>
                 <a
                   href="#projects"
-                  className="text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Featured Work
                 </a>
                 <a
                   href="#footer"
-                  className="text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Global Presence
                 </a>
@@ -155,14 +154,14 @@ export function Footer(): ReactElement {
 
               {/* Connect & Socials */}
               <div className="flex flex-col gap-2.5">
-                <span className="font-mono text-xs uppercase tracking-wider text-foreground/50">
+                <span className="font-mono text-xs uppercase tracking-wider text-foreground/60">
                   Connect
                 </span>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/RawatShreyansh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <span>GitHub</span>
                   <ArrowUpRight className="size-3.5 opacity-60 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
@@ -171,7 +170,7 @@ export function Footer(): ReactElement {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <span>LinkedIn</span>
                   <ArrowUpRight className="size-3.5 opacity-60 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
@@ -180,7 +179,7 @@ export function Footer(): ReactElement {
                   href="https://x.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <span>X (Twitter)</span>
                   <ArrowUpRight className="size-3.5 opacity-60 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
@@ -189,7 +188,7 @@ export function Footer(): ReactElement {
                   href="https://huggingface.co"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <span>Hugging Face</span>
                   <ArrowUpRight className="size-3.5 opacity-60 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
@@ -198,17 +197,17 @@ export function Footer(): ReactElement {
 
               {/* Direct Reach / Status */}
               <div className="col-span-2 flex flex-col gap-2.5 sm:col-span-1">
-                <span className="font-mono text-xs uppercase tracking-wider text-foreground/50">
+                <span className="font-mono text-xs uppercase tracking-wider text-foreground/60">
                   Direct Reach
                 </span>
                 <a
                   href="mailto:contact@shreyanshrawat.dev"
-                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/75 transition-colors hover:text-foreground"
+                  className="group inline-flex items-center gap-1.5 text-sm text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <Mail className="size-3.5 opacity-60" />
                   <span>Email Me</span>
                 </a>
-                <div className="mt-2 space-y-1 font-mono text-xs text-foreground/50">
+                <div className="mt-2 space-y-1 font-mono text-xs text-foreground/65">
                   <p>IST • UTC+5:30</p>
                   <p>Remote &amp; On-Site</p>
                 </div>
@@ -218,13 +217,13 @@ export function Footer(): ReactElement {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-foreground/[0.06] pt-8 text-xs text-foreground/50 sm:flex-row">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-foreground/[0.08] pt-8 text-xs text-foreground/65 sm:flex-row">
           <p>© 2026 Shreyansh Rawat. All rights reserved.</p>
 
           <button
             type="button"
             onClick={scrollToTop}
-            className="group inline-flex items-center gap-1.5 text-foreground/60 transition-colors hover:text-foreground"
+            className="group inline-flex items-center gap-1.5 text-foreground/75 transition-colors hover:text-foreground"
           >
             <span>Back to top</span>
             <ArrowUp className="size-3.5 transition-transform duration-200 group-hover:-translate-y-0.5" />

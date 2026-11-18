@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeToggle } from "@/components/library/theme-toggle";
 import { WeatherSky } from "@/components/library/weather-sky";
 
 export function HeroSection() {
@@ -10,8 +9,6 @@ export function HeroSection() {
       className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-6 py-24"
     >
       <WeatherSky defaultScene="aurora" interactive={false} />
-
-      <ThemeToggle className="fixed right-6 top-6 z-50" />
 
       {/* Hero content */}
       <div className="relative z-10 mx-auto max-w-3xl text-center">
